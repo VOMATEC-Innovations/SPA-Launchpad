@@ -1,14 +1,13 @@
 {
   "name": "spa-launchpad",
   "version": "1.0.0",
-  "description": "",
+  "description": "Delivers static content of a SPA and provides a route to fetch settings that are based on prefixed environment variables.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "t-knapp",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
   }
