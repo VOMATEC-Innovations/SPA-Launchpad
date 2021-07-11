@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>SPA</title>
+</head>
+<body>
+    <h1>I am the SPA!</h1>
+    <h2>This is my config.</h2>
+    <pre id="config-view">Loading config ...</pre>
+
+    <script>
+        (async () => {
+            const response = await fetch('config');
+            const config = await response.json();
+
+            document.getElementById('config-view').innerText = JSON.stringify(config, null, 4);
+        })();
+    </script>
+</body>
